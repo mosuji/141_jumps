@@ -59,7 +59,6 @@ reg [31:0] reg_A, reg_B; //register file read data registers
 reg [31:0] alu_last_result, exec_result; 
 reg [31:0] instruction_count; // for debugging
 reg [9:0] instruction_number;
-reg [31:0] RA; //return address, for jump instructions
 
 /* the ALU */
 reg  [N-1:0]  alu_src_a, alu_src_b;
@@ -372,7 +371,6 @@ always @(*) begin
 				reg_wr_ena = 0;
 				mem_wr_data = 0;
 				pc_src_sw = `PC_SRC_SW_JUMP;
-				RA = PC + 4;
 			end
 			/* ---------------- MEMORY ---------------- */
 			`S_MEMORY1: begin
