@@ -366,12 +366,13 @@ always @(*) begin
 			end
 			/* ---------------- JUMP ---------------- */
 			`S_JUMP: begin
+				next_state = `S_FETCH1;
 				PC_ena  = 1;
 				IR_ena  = 0;
 				reg_wr_ena = 0;
 				mem_wr_data = 0;
 				pc_src_sw = `PC_SRC_SW_JUMP;
-				RA = PC;
+				RA = PC + 4;
 			end
 			/* ---------------- MEMORY ---------------- */
 			`S_MEMORY1: begin
