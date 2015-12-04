@@ -281,18 +281,9 @@ always @(*) begin
 					/* ---------------- EXEC R ---------------- */
 					`MIPS_TYPE_R : begin
 						PC_ena = 0;
-						if (funct != `MIPS_FUNCT_JR) begin
-							alu_src_a_sw = `ALU_SRC_A_SW_REG_A;	
-						end
-						else begin
-							alu_src_a_sw = `ALU_SRC_A_SW_PC;
-						end
-						
+						alu_src_a_sw = `ALU_SRC_A_SW_REG_A;	
 						if( (funct === `MIPS_FUNCT_SLL) || (funct === `MIPS_FUNCT_SRL) || (funct === `MIPS_FUNCT_SRA) ) begin
 							alu_src_b_sw = `ALU_SRC_B_SW_SHAMT;
-						end
-						else if (funct == `MIPS_FUNCT_JR) begin
-							alu_src_b_sw = `ALU_SRC_B_SW_4;
 						end
 						else begin
 							alu_src_b_sw = `ALU_SRC_B_SW_REG_B;
@@ -487,7 +478,7 @@ always @(*) begin
 					`MIPS_TYPE_J: begin
 						reg_wr_ena = 1;
 						reg_wr_addr = 5'b11111; 
-						reg_wr_data = alu_last_result;
+						reg_wr_data = alu_last_result; //PC + 4
 					end
 					default: begin
 					`ifdef VERBOSE
