@@ -341,7 +341,11 @@ always @(*) begin
 					`MIPS_TYPE_J : begin
 						//you will need to update this code!
 						reg_wr_ena = 0;
+<<<<<<< HEAD
 						next_state = `S_;
+=======
+						next_state = `S_JUMP;
+>>>>>>> origin/master
 						PC_ena = 0;
 						pc_src_sw = `PC_SRC_SW_JUMP;
 						alu_src_a_sw = `ALU_SRC_A_SW_PC;

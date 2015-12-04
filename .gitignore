@@ -1,0 +1,14 @@
+
+*.xmsgs
+
+lab4-checkpoint-ri/_xmsgs/pn_parser.xmsgs
+
+lab4-checkpoint-ri/ipcore_dir/_xmsgs/pn_parser.xmsgs
+
+lab4-checkpoint-ri/ipcore_dir/_xmsgs/pn_parser.xmsgs
+
+*.projectmgr
+
+*.xreport
+
+lab4-checkpoint-ri/lab4-checkpoint-ri.gise
