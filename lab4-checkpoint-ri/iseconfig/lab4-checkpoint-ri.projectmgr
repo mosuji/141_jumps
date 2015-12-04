@@ -14,13 +14,13 @@
          <ClosedNode>/touchpad_controller |home|avinash|Dropbox|cs141-f15|lab4-checkpoint-ri|vmodtft_src|touchpad_controller.v</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>main (C:/Users/cs141/Desktop/lab4-checkpoint-ri/main.v)</SelectedItem>
+         <SelectedItem>main (C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/main.v)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b7000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b70000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001b6000000020000000000000000000000000200000064ffffffff000000810000000300000002000001b60000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main (C:/Users/cs141/Desktop/lab4-checkpoint-ri/main.v)</CurrentItem>
+      <CurrentItem>main (C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/main.v)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
       <ClosedNodes>
@@ -36,7 +36,7 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000144000000010000000100000000000000000000000064ffffffff000000810000000000000001000001440000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000125000000010000000100000000000000000000000064ffffffff000000810000000000000001000001250000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>

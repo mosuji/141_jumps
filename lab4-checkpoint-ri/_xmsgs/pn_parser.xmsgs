@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated   -->
+<!--     by the Xilinx ISE software.  Any direct editing or        -->
+<!--     changes made to this file may result in unpredictable     -->
+<!--     behavior or data corruption.  It is strongly advised that -->
+<!--     users do not edit the contents of this file.              -->
+<!--                                                               -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
+
+<messages>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/main.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/main.v</arg>&quot; Line <arg fmt="%d" index="2">5</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/tft_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/main.v&quot; line 5
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_debugger.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/_/common/debouncer.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/_/common/nibble_to_char.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/_/common/one_shot.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/alu.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/alu.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/alu_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/alu.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/decoder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_multicycle_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/alu_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_alu_op_decode.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_decoder.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_decoder.v</arg>&quot; Line <arg fmt="%d" index="2">4</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_decoder.v&quot; line 4
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v</arg>&quot; Line <arg fmt="%d" index="2">1</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/alu_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v&quot; line 1
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v</arg>&quot; Line <arg fmt="%d" index="2">2</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v&quot; line 2
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_multicycle_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v</arg>&quot; Line <arg fmt="%d" index="2">4</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_memory_space_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v&quot; line 4
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v</arg>&quot; Line <arg fmt="%d" index="2">17</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_helper.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/mips_multicycle_vn.v&quot; line 17
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/register.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/register_file.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/synth_dual_port_memory.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/synth_dual_port_memory.v</arg>&quot; Line <arg fmt="%d" index="2">4</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/mips_memory_space_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/synth_dual_port_memory.v&quot; line 4
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_register_file.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/test_mips_debugger.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/vmodtft_src/averager.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/vmodtft_src/tft_driver.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1065" >&quot;<arg fmt="%s" index="1">C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/vmodtft_src/tft_driver.v</arg>&quot; Line <arg fmt="%d" index="2">3</arg>. <arg fmt="%s" index="3">Include file found: &apos;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/tft_defines.v&apos; in file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/vmodtft_src/tft_driver.v&quot; line 3
+</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/vmodtft_src/touchpad_controller.v&quot; into library work</arg>
+</msg>
+
+</messages>
+
