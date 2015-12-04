@@ -436,11 +436,16 @@ always @(*) begin
 				case (instruction_type)
 					`MIPS_TYPE_R: begin
 						//you might need to do something special here for JR
-						reg_wr_ena = 1;
-						reg_wr_addr = rd;
-						reg_wr_data = alu_last_result;
-						pc_src_sw = `PC_SRC_SW_ALU;
-						PC_ena = 0;					
+						if (opcode == `MIPS_FUNCT_JR) begin
+							next_PC = reg_rd_data0;
+						end
+						else begin
+							reg_wr_ena = 1;
+							reg_wr_addr = rd;
+							reg_wr_data = alu_last_result;
+							pc_src_sw = `PC_SRC_SW_ALU;
+							PC_ena = 0;
+						end					
 					end
 					`MIPS_TYPE_I: begin
 						reg_wr_ena = 1;
