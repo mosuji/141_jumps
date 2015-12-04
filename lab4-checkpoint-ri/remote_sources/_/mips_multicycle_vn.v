@@ -162,7 +162,6 @@ always @(*) begin
 	case (pc_src_sw)
 		`PC_SRC_SW_ALU      : next_PC = alu_result;
 		`PC_SRC_SW_ALU_LAST : next_PC = alu_last_result;
-
 		`PC_SRC_SW_JUMP 	: next_PC = jump_address;
 		default             : next_PC = 32'hFFFF_FFFF; //failure mode
 	endcase
@@ -255,9 +254,12 @@ always @(*) begin
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
 				alu_src_b_sw = `ALU_SRC_B_SW_SESI;
 				next_state = `S_EXECUTE;
-				if (opcode == `MIPS_OP_J) begin
+				if (opcode == `MIPS_OP_J || `MIPS_OP_JAL) begin
 					pc_src_sw = `PC_SRC_SW_JUMP;
-					next_state = `S_FETCH1;
+					PC_ena = 1;
+					if (op_code == `MIPS_OP_J) begin
+						next_state = `S_FETCH1;
+					end
 				end
 			end
 			/* ---------------- EXECUTE ---------------- */
@@ -339,9 +341,9 @@ always @(*) begin
 						reg_wr_ena = 0;
 						next_state = `S_WRITEBACK;
 						PC_ena = 0;
-						pc_src_sw = `PC_SRC_SW_JUMP;
 						alu_src_a_sw = `ALU_SRC_A_SW_PC;
 						alu_src_b_sw = `ALU_SRC_B_SW_4;
+						alu_op = `ALU_OP_ADD;
 					end
 					/* ---------------- EXEC B ---------------- */
 					`MIPS_TYPE_B : begin
@@ -447,7 +449,6 @@ always @(*) begin
 						reg_wr_ena = 1;
 						reg_wr_addr = 5'b11111; 
 						reg_wr_data = alu_last_result;
-						pc_src_sw = `PC_SRC_SW_JUMP;
 					end
 					default: begin
 					`ifdef VERBOSE
