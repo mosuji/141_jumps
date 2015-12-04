@@ -281,9 +281,18 @@ always @(*) begin
 					/* ---------------- EXEC R ---------------- */
 					`MIPS_TYPE_R : begin
 						PC_ena = 0;
-						alu_src_a_sw = `ALU_SRC_A_SW_REG_A;
+						if (funct != `MIPS_FUNCT_JR) begin
+							alu_src_a_sw = `ALU_SRC_A_SW_REG_A;	
+						end
+						else begin
+							alu_src_a_sw = `ALU_SRC_A_SW_PC;
+						end
+						
 						if( (funct === `MIPS_FUNCT_SLL) || (funct === `MIPS_FUNCT_SRL) || (funct === `MIPS_FUNCT_SRA) ) begin
 							alu_src_b_sw = `ALU_SRC_B_SW_SHAMT;
+						end
+						else if (funct == `MIPS_FUNCT_JR) begin
+							alu_src_b_sw = `ALU_SRC_B_SW_4;
 						end
 						else begin
 							alu_src_b_sw = `ALU_SRC_B_SW_REG_B;
