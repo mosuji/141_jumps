@@ -349,11 +349,16 @@ always @(*) begin
 					`MIPS_TYPE_B : begin
 						//you will need to update this code!
 						reg_wr_ena = 0;
-						next_state = `S_FAILURE;
+						next_state = `S_FETCH1;
 						PC_ena = 0;
 						pc_src_sw = 0;
 						alu_src_a_sw = `ALU_SRC_A_SW_REG_A;
 						alu_src_b_sw = `ALU_SRC_B_SW_REG_B;
+						alu_op = `ALU_OP_SUB;
+						if (alu_zero) begin
+							PC_ena = 1;
+							pc_src_sw = `PC_SRC_SW_ALU_LAST;
+						end
 					end
 					default: begin
 						PC_ena = 0;
