@@ -254,15 +254,11 @@ always @(*) begin
 				alu_op = `ALU_OP_ADD;
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
 				alu_src_b_sw = `ALU_SRC_B_SW_SESI;
-				// case(op_code)
-				// `MIPS_TYPE_
-				// if (op_code == `MIPS_OP_J || op_code == `MIPS_TYPE_JAL) begin
-				// 	next_state = `S_JUMP;
-				// end
-				// else begin
 				next_state = `S_EXECUTE;
-				//end	
-
+				if (opcode == `MIPS_OP_J) begin
+					pc_src_sw = `PC_SRC_SW_JUMP;
+					next_state = `S_FETCH1;
+				end
 			end
 			/* ---------------- EXECUTE ---------------- */
 			`S_EXECUTE: begin
@@ -341,8 +337,7 @@ always @(*) begin
 					`MIPS_TYPE_J : begin
 						//you will need to update this code!
 						reg_wr_ena = 0;
-						next_state = `S_;
-						next_state = `S_JUMP;
+						next_state = `S_WRITEBACK;
 						PC_ena = 0;
 						pc_src_sw = `PC_SRC_SW_JUMP;
 						alu_src_a_sw = `ALU_SRC_A_SW_PC;
