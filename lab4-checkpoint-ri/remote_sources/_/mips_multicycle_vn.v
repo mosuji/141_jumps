@@ -254,14 +254,14 @@ always @(*) begin
 				alu_op = `ALU_OP_ADD;
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
 				alu_src_b_sw = `ALU_SRC_B_SW_SESI;
-				case(op_code)
-				`MIPS_TYPE_
-				if (op_code == `MIPS_OP_J || op_code == `MIPS_TYPE_JAL) begin
-					next_state = `S_JUMP;
-				end
-				else begin
-					next_state = `S_EXECUTE;
-				end	
+				// case(op_code)
+				// `MIPS_TYPE_
+				// if (op_code == `MIPS_OP_J || op_code == `MIPS_TYPE_JAL) begin
+				// 	next_state = `S_JUMP;
+				// end
+				// else begin
+				next_state = `S_EXECUTE;
+				//end	
 
 			end
 			/* ---------------- EXECUTE ---------------- */
@@ -341,11 +341,11 @@ always @(*) begin
 					`MIPS_TYPE_J : begin
 						//you will need to update this code!
 						reg_wr_ena = 0;
-						next_state = `S_FAILURE;
+						next_state = `S_;
 						PC_ena = 0;
-						pc_src_sw = 0;
-						alu_src_a_sw = `ALU_SRC_A_SW_REG_A;
-						alu_src_b_sw = `ALU_SRC_B_SW_REG_B;
+						pc_src_sw = `PC_SRC_SW_JUMP;
+						alu_src_a_sw = `ALU_SRC_A_SW_PC;
+						alu_src_b_sw = `ALU_SRC_B_SW_4;
 					end
 					/* ---------------- EXEC B ---------------- */
 					`MIPS_TYPE_B : begin
@@ -362,15 +362,6 @@ always @(*) begin
 						next_state = `S_FAILURE;
 					end
 				endcase
-			end
-			/* ---------------- JUMP ---------------- */
-			`S_JUMP: begin
-				next_state = `S_FETCH1;
-				PC_ena  = 1;
-				IR_ena  = 0;
-				reg_wr_ena = 0;
-				mem_wr_data = 0;
-				pc_src_sw = `PC_SRC_SW_JUMP;
 			end
 			/* ---------------- MEMORY ---------------- */
 			`S_MEMORY1: begin
@@ -457,7 +448,10 @@ always @(*) begin
 						endcase
 					end //M-type
 					`MIPS_TYPE_J: begin
-						next_state = `S_FAILURE;
+						reg_wr_ena = 1;
+						reg_wr_addr = 5'b11111; 
+						reg_wr_data = alu_last_result;
+						pc_src_sw = `PC_SRC_SW_JUMP;
 					end
 					default: begin
 					`ifdef VERBOSE
