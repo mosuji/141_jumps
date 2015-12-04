@@ -14,8 +14,6 @@ no data file was supplied, using tests/zero.memh
 initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
 defaulting to 1000 cycles
 Finished circuit initialization process.
-              875000:: MIPS FSM FAILURE at instruction         18.  Quitting now.
-Stopped at time : 875 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -27,8 +25,6 @@ no data file was supplied, using tests/zero.memh
 initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
 defaulting to 1000 cycles
 Finished circuit initialization process.
-              875000:: MIPS FSM FAILURE at instruction         18.  Quitting now.
-Stopped at time : 875 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -40,5 +36,341 @@ no data file was supplied, using tests/zero.memh
 initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
 defaulting to 1000 cycles
 Finished circuit initialization process.
-              775000:: MIPS FSM FAILURE at instruction         16.  Quitting now.
-Stopped at time : 775 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
+# run all
+simulated        1000 cycles
+register file final state dump:
+
+r00::   $zero::          0
+r01::     $at::          0
+r02::     $v0::          0
+r03::     $v1::          0
+r04::     $a0::          0
+r05::     $a1::          0
+r06::     $a2::          0
+r07::     $a3::          0
+r08::     $t0::          0
+r09::     $t1::          0
+r10::     $t2::          0
+r11::     $t3::          0
+r12::     $t4::          0
+r13::     $t5::          0
+r14::     $t6::          0
+r15::     $t7::          0
+r16::     $s0::          0
+r17::     $s1::          0
+r18::     $s2::          0
+r19::     $s3::         51
+r20::     $s4::          0
+r21::     $s5::          0
+r22::     $s6::          0
+r23::     $s7::          0
+r24::     $t8::          0
+r25::     $t9::          0
+r26::     $k0::          0
+r27::     $k1::          0
+r28::     $gp::          0
+r29::     $sp::          0
+r30::     $fp::          0
+r31::     $ra::    4194364
+Stopped at time : 10010 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 79
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+# run all
+simulated        1000 cycles
+register file final state dump:
+
+r00::   $zero::          0
+r01::     $at::          0
+r02::     $v0::          0
+r03::     $v1::          0
+r04::     $a0::          0
+r05::     $a1::          0
+r06::     $a2::          0
+r07::     $a3::          0
+r08::     $t0::          0
+r09::     $t1::          0
+r10::     $t2::          0
+r11::     $t3::          0
+r12::     $t4::          0
+r13::     $t5::          0
+r14::     $t6::          0
+r15::     $t7::          0
+r16::     $s0::          0
+r17::     $s1::          0
+r18::     $s2::          0
+r19::     $s3::         51
+r20::     $s4::          0
+r21::     $s5::          0
+r22::     $s6::          0
+r23::     $s7::          0
+r24::     $t8::          0
+r25::     $t9::          0
+r26::     $k0::          0
+r27::     $k1::          0
+r28::     $gp::          0
+r29::     $sp::          0
+r30::     $fp::          0
+r31::     $ra::    4194364
+Stopped at time : 10010 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 79
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+              845000:: MIPS FSM FAILURE at instruction         18.  Quitting now.
+Stopped at time : 845 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
+# run all
+              855000:: MIPS FSM FAILURE at instruction         18.  Quitting now.
+Stopped at time : 855 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+              845000:: MIPS FSM FAILURE at instruction         18.  Quitting now.
+Stopped at time : 845 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+              805000:: MIPS FSM FAILURE at instruction         17.  Quitting now.
+Stopped at time : 805 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+              795000:: MIPS FSM FAILURE at instruction         17.  Quitting now.
+Stopped at time : 795 ns : File "C:/Users/Juaquin/Dropbox/Harvard/Classes/Classes/CS 141/141_jumps/lab4-checkpoint-ri/remote_sources/_/test_mips_multicycle.v" Line 87
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+no data file was supplied, using tests/zero.memh
+initializing test_mips_multicycle.MEMORY's instruction memory from '                                                                              tests/current_test.memh' and data memory from '                                                                                      tests/zero.memh'
+defaulting to 1000 cycles
+Finished circuit initialization process.

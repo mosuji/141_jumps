@@ -221,7 +221,13 @@ always @(*) begin
 				dmem_wr_ena = 0;
 				reg_wr_ena = 0;
 				//set PC to PC + 4 with this ena/mux src combo
-				PC_ena  = 1;
+				if (funct != `MIPS_FUNCT_JR) begin
+					PC_ena  = 1;
+				end
+				else begin
+					PC_ena = 0;
+				end
+				//PC_ena = 1;
 				pc_src_sw = `PC_SRC_SW_ALU;
 				alu_op = `ALU_OP_ADD;
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
@@ -255,12 +261,17 @@ always @(*) begin
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
 				alu_src_b_sw = `ALU_SRC_B_SW_SESI;
 				next_state = `S_EXECUTE;
-				if (op_code == `MIPS_OP_J || op_code == `MIPS_OP_JAL) begin
+				if (op_code == `MIPS_OP_J/* || op_code == `MIPS_OP_JAL*/) begin
 					pc_src_sw = `PC_SRC_SW_JUMP;
+					//if (op_code == `MIPS_OP_J) begin
 					PC_ena = 1;
-					if (op_code == `MIPS_OP_J) begin
-						next_state = `S_FETCH1;
-					end
+					next_state = `S_FETCH1;
+					//end
+				end
+				else if (funct == `MIPS_FUNCT_JR) begin 
+					pc_src_sw = `PC_SRC_SW_DATA0;
+					PC_ena = 1;
+					next_state = `S_JR;
 				end
 			end
 			/* ---------------- EXECUTE ---------------- */
@@ -443,12 +454,15 @@ always @(*) begin
 							reg_wr_data = alu_last_result;
 							pc_src_sw = `PC_SRC_SW_ALU;
 							PC_ena = 0;
-						end				
+						end		
 						else begin
+							next_state = `S_JR;
+						end		
+						/*else begin
 							reg_wr_ena = 0;
 							pc_src_sw = `PC_SRC_SW_DATA0;
 							PC_ena = 1;
-						end	
+						end*/
 					end
 					`MIPS_TYPE_I: begin
 						reg_wr_ena = 1;
@@ -479,6 +493,8 @@ always @(*) begin
 						reg_wr_ena = 1;
 						reg_wr_addr = 5'b11111; 
 						reg_wr_data = alu_last_result; //PC + 4
+						pc_src_sw = `PC_SRC_SW_JUMP;
+						PC_ena = 1;
 					end
 					default: begin
 					`ifdef VERBOSE
@@ -487,6 +503,12 @@ always @(*) begin
 						next_state = `S_FAILURE;
 					end
 				endcase
+			end
+			`S_JR: begin
+				reg_wr_ena = 0;
+				pc_src_sw = `PC_SRC_SW_DATA0;
+				PC_ena = 0;
+				next_state = `S_FETCH1;
 			end
 			default: begin
 				PC_ena = 0;

@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="12" />
    <wvobject fp_name="/test_mips_multicycle/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -53,6 +53,30 @@
       <obj_property name="ElementShortName">r31[31:0]</obj_property>
       <obj_property name="ObjectShortName">r31[31:0]</obj_property>
       <obj_property name="label">ra</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/IR" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">IR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/IR_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">IR_ena</obj_property>
+      <obj_property name="ObjectShortName">IR_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_rd_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rd_data[31:0]</obj_property>
       <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
 </wave_config>

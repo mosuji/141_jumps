@@ -11,6 +11,7 @@
 `define S_FETCH1         4'd8
 `define S_FETCH2         4'd9
 `define S_FAILURE        4'hf
+`define S_JR			 4'ha
 
 //switch codes for the PC source mux
 `define PC_SRC_SW_WIDTH 2
