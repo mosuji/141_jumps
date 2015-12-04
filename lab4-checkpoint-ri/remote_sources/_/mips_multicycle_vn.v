@@ -59,7 +59,7 @@ reg [31:0] reg_A, reg_B; //register file read data registers
 reg [31:0] alu_last_result, exec_result; 
 reg [31:0] instruction_count; // for debugging
 reg [9:0] instruction_number;
-
+reg [31:0] RA; //return address, for jump instructions
 
 /* the ALU */
 reg  [N-1:0]  alu_src_a, alu_src_b;
@@ -163,7 +163,7 @@ always @(*) begin
 	case (pc_src_sw)
 		`PC_SRC_SW_ALU      : next_PC = alu_result;
 		`PC_SRC_SW_ALU_LAST : next_PC = alu_last_result;
-		
+
 		`PC_SRC_SW_JUMP 	: next_PC = jump_address;
 		default             : next_PC = 32'hFFFF_FFFF; //failure mode
 	endcase
@@ -255,7 +255,15 @@ always @(*) begin
 				alu_op = `ALU_OP_ADD;
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
 				alu_src_b_sw = `ALU_SRC_B_SW_SESI;
-				next_state = `S_EXECUTE;
+				case(op_code)
+				`MIPS_TYPE_
+				if (op_code == `MIPS_OP_J || op_code == `MIPS_TYPE_JAL) begin
+					next_state = `S_JUMP;
+				end
+				else begin
+					next_state = `S_EXECUTE;
+				end	
+
 			end
 			/* ---------------- EXECUTE ---------------- */
 			`S_EXECUTE: begin
@@ -355,6 +363,15 @@ always @(*) begin
 						next_state = `S_FAILURE;
 					end
 				endcase
+			end
+			/* ---------------- JUMP ---------------- */
+			`S_JUMP: begin
+				PC_ena  = 1;
+				IR_ena  = 0;
+				reg_wr_ena = 0;
+				mem_wr_data = 0;
+				pc_src_sw = `PC_SRC_SW_JUMP;
+				RA = PC;
 			end
 			/* ---------------- MEMORY ---------------- */
 			`S_MEMORY1: begin
