@@ -1,0 +1,85 @@
+some psuedo-code:
+
+//initialize
+//globals (registers)
+current_frame       $1 
+next_frame_count    $2
+cell                $3
+cell_neighbor       $4
+living_neighbors    $5
+neighbor_status     $6
+branch clause       $7
+frame_limit         $10 (set to 60 for one update per second, set to 1 for fastest reasonable)
+one                 $30 #the value one
+three               $29 #the value three
+max_cell            $28 #the value 1020
+while (1){   //main loop
+	read current frame
+	if (next_frame_count < current_frame){  //enough time has elapsed, check 1
+		next_frame_count = next_frame_count + 60;
+		cell = 1024
+		while (cell >= 0){
+			cell = cell - 4
+			living_neighbors = 0
+			cell_neighbor = cell_neighbor + k0;
+			check_cell_neighbor()
+			cell_neighbor = cell_neighbor + k1;
+			check_cell_neighbor()
+			cell_neighbor = cell_neighbor + k2;
+			check_cell_neighbor()
+			cell_neighbor = cell_neighbor + k3;
+			check_cell_neighbor()
+			if(living_neighbors < 2){
+				*cell = 0 //cell death
+				return; //jump to start of cell check loop
+			}
+			if(3 < living_neighbors){
+				*cell = 0
+				return; //jump to start of cell check loop
+			}
+			*cell = 1
+			return; //jump to start of cell check loop
+		}
+	}	
+}
+
+void check_cell_neighbor(){
+	if(cell_neighbor < 0){
+		return;
+	}
+	if(1020 < cell_neighbor){
+		return;
+	}
+	 neighbor_status = *cell_neighbor
+	 living_neighbors = living_neighbors + neighbor_status
+	return;
+}
+
+
+python code to generate memh file for pulsar
+a = "".join([
+	'0000000000000000',
+	'0000000000000000',
+	'0001110001110000',
+	'0000000000000000',
+	'0100001010000100',
+	'0100001010000100',
+	'0100001010000100',
+	'0001110001110000',
+	'0000000000000000',
+	'0001110001110000',
+	'0100001010000100',
+	'0100001010000100',
+	'0100001010000100',
+	'0000000000000000',
+	'0001110001110000',
+	'0000000000000000'
+])
+for c in a:
+	if c == '0':
+		print "00000000"
+	else:
+		print "00000001"
+
+
+

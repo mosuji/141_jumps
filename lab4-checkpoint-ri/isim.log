@@ -1,0 +1,2 @@
+ISim log file
+Running: /home/avinash/Dropbox/cs141-f15/lab4-checkpoint-ri/test_mips_multicycle_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/avinash/Dropbox/cs141-f15/lab4-checkpoint-ri/test_mips_multicycle_isim_beh.wdb 

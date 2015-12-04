@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/avinash/Dropbox/cs141-f15/lab4-solutions/main.ncd
+OUTFILE=/home/avinash/Dropbox/cs141-f15/lab4-solutions/main.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=/home/avinash/Dropbox/cs141-f15/lab4-solutions
+LICENSE=WebPack
+USER_INFO=207362390_1777509885_210609573_208

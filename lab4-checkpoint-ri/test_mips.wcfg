@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/avinash/Dropbox/cs141-f15/lab4-solutions/test_mips_multicycle_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test_mips_multicycle" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/test_mips_multicycle/UUT/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/instruction_number" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">instruction_number[9:0]</obj_property>
+      <obj_property name="ObjectShortName">instruction_number[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/PC_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PC_ena</obj_property>
+      <obj_property name="ObjectShortName">PC_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/UUT/PC" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_wr_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_wr_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_wr_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_rd_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_rd_data[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_rd_data[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_wr_ena" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_wr_ena</obj_property>
+      <obj_property name="ObjectShortName">mem_wr_ena</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test_mips_multicycle/mem_invalid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_invalid</obj_property>
+      <obj_property name="ObjectShortName">mem_invalid</obj_property>
+   </wvobject>
+</wave_config>

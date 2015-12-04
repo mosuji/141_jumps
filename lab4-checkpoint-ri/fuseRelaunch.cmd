@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/avinash/Dropbox/cs141-f15/lab4-checkpoint-ri/test_mips_multicycle_isim_beh.exe" -prj "/home/avinash/Dropbox/cs141-f15/lab4-checkpoint-ri/test_mips_multicycle_beh.prj" "work.test_mips_multicycle" "work.glbl" 
