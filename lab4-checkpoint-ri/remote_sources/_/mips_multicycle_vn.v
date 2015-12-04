@@ -164,6 +164,7 @@ always @(*) begin
 		`PC_SRC_SW_ALU      : next_PC = alu_result;
 		`PC_SRC_SW_ALU_LAST : next_PC = alu_last_result;
 		
+		`PC_SRC_SW_JUMP 	: next_PC = jump_address;
 		default             : next_PC = 32'hFFFF_FFFF; //failure mode
 	endcase
 end

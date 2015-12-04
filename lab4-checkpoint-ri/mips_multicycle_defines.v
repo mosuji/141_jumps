@@ -10,6 +10,7 @@
 `define S_MEMORY2        4'd7
 `define S_FETCH1         4'd8
 `define S_FETCH2         4'd9
+`define S_JUMP           4'd10
 `define S_FAILURE        4'hf
 
 //switch codes for the PC source mux
