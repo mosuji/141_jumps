@@ -163,6 +163,7 @@ always @(*) begin
 		`PC_SRC_SW_ALU      : next_PC = alu_result;
 		`PC_SRC_SW_ALU_LAST : next_PC = alu_last_result;
 		`PC_SRC_SW_JUMP 	: next_PC = jump_address;
+		`PC_SRC_SW_DATA0	: next_PC = reg_rd_data0;
 		default             : next_PC = 32'hFFFF_FFFF; //failure mode
 	endcase
 end
@@ -254,7 +255,7 @@ always @(*) begin
 				alu_src_a_sw = `ALU_SRC_A_SW_PC;
 				alu_src_b_sw = `ALU_SRC_B_SW_SESI;
 				next_state = `S_EXECUTE;
-				if (opcode == `MIPS_OP_J || `MIPS_OP_JAL) begin
+				if (op_code == `MIPS_OP_J || op_code == `MIPS_OP_JAL) begin
 					pc_src_sw = `PC_SRC_SW_JUMP;
 					PC_ena = 1;
 					if (op_code == `MIPS_OP_J) begin
@@ -355,7 +356,7 @@ always @(*) begin
 						alu_src_a_sw = `ALU_SRC_A_SW_REG_A;
 						alu_src_b_sw = `ALU_SRC_B_SW_REG_B;
 						alu_op = `ALU_OP_SUB;
-						if (opcode == `MIPS_OP_BEQ) begin
+						if (op_code == `MIPS_OP_BEQ) begin
 							if (alu_zero) begin
 								PC_ena = 1;
 								pc_src_sw = `PC_SRC_SW_ALU_LAST;
@@ -364,7 +365,7 @@ always @(*) begin
 								PC_ena = 0;
 							end
 						end
-						else if (opcode == `MIPS_OP_BNE) begin
+						else if (op_code == `MIPS_OP_BNE) begin
 							if (!alu_zero) begin
 								PC_ena = 1;
 								pc_src_sw = `PC_SRC_SW_ALU_LAST;
@@ -436,16 +437,18 @@ always @(*) begin
 				case (instruction_type)
 					`MIPS_TYPE_R: begin
 						//you might need to do something special here for JR
-						if (opcode == `MIPS_FUNCT_JR) begin
-							next_PC = reg_rd_data0;
-						end
-						else begin
+						if (op_code != `MIPS_FUNCT_JR) begin
 							reg_wr_ena = 1;
 							reg_wr_addr = rd;
 							reg_wr_data = alu_last_result;
 							pc_src_sw = `PC_SRC_SW_ALU;
 							PC_ena = 0;
-						end					
+						end				
+						else begin
+							reg_wr_ena = 0;
+							pc_src_sw = `PC_SRC_SW_DATA0;
+							PC_ena = 1;
+						end	
 					end
 					`MIPS_TYPE_I: begin
 						reg_wr_ena = 1;

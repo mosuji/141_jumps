@@ -17,6 +17,7 @@
 `define PC_SRC_SW_ALU      2'd0 //the current combinational ALU result
 `define PC_SRC_SW_ALU_LAST 2'd1 //the last ALU result
 `define PC_SRC_SW_JUMP     2'd2 //the jump target out of the IR
+`define PC_SRC_SW_DATA0	   2'd3 //for JR instruction
 
 //switch codes for the ALU source muxes
 `define ALU_SRC_A_SW_WIDTH		1

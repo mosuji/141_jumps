@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/avinash/Dropbox/cs141-f15/lab4-solutions/main.ncd
-OUTFILE=/home/avinash/Dropbox/cs141-f15/lab4-solutions/main.bit
+INFILE=C:\Users\Juaquin\Dropbox\Harvard\Classes\Classes\CS 141\141_jumps\lab4-checkpoint-ri\main.ncd
+OUTFILE=C:\Users\Juaquin\Dropbox\Harvard\Classes\Classes\CS 141\141_jumps\lab4-checkpoint-ri\main.bit
 FAMILY=Spartan6
 PART=xc6slx45-3csg324
-WORKINGDIR=/home/avinash/Dropbox/cs141-f15/lab4-solutions
+WORKINGDIR=C:\Users\Juaquin\Dropbox\Harvard\Classes\Classes\CS 141\141_jumps\lab4-checkpoint-ri
 LICENSE=WebPack
-USER_INFO=207362390_1777509885_210609573_208
+USER_INFO=207362390_1777509885_0_951
