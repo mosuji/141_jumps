@@ -355,9 +355,26 @@ always @(*) begin
 						alu_src_a_sw = `ALU_SRC_A_SW_REG_A;
 						alu_src_b_sw = `ALU_SRC_B_SW_REG_B;
 						alu_op = `ALU_OP_SUB;
-						if (alu_zero) begin
-							PC_ena = 1;
-							pc_src_sw = `PC_SRC_SW_ALU_LAST;
+						if (opcode == `MIPS_OP_BEQ) begin
+							if (alu_zero) begin
+								PC_ena = 1;
+								pc_src_sw = `PC_SRC_SW_ALU_LAST;
+							end
+							else begin
+								PC_ena = 0;
+							end
+						end
+						else if (opcode == `MIPS_OP_BNE) begin
+							if (!alu_zero) begin
+								PC_ena = 1;
+								pc_src_sw = `PC_SRC_SW_ALU_LAST;
+							end
+							else begin
+								PC_ena = 0;
+							end
+						end
+						else begin
+							next_state = `S_FAILURE;	
 						end
 					end
 					default: begin
